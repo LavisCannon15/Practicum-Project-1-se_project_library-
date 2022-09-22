@@ -65,7 +65,7 @@
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+          <ul class="card__arrange">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -298,11 +298,67 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
+
       <footer class="footer" id="contacts-link">
         <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <div class="footer__columns">
+          <div class="footer__column">
+            <div class="footer__logo">
+              <img src="./images/logo_practicum.svg" alt="practicum icon" class="footer__logo" />
+
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <div class="footer__column_content_hours">
+              <h3 class="footer__column-heading">Hours</h3>
+
+              <li class="footer__list">
+                <li class="footer__list-item">
+                  <a>Weekdays: 9am - 8pm</a>
+                </li>
+
+                <li class="footer__list-item">
+                  <a>Weekends: 10am - 6pm</a>
+                </li>
+              </li>
+
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <div class="footer__column_content_social">
+
+              <h3 class="footer__column-heading">Social media</h3>
+
+              <li class="footer__list">
+
+                <li class="footer__list-item">
+                  <img src="./images/facebook_white.svg" alt="facebook icon" class="footer__social-icon" />
+                  <a href="#" class="footer__column-link">Facebook</a>  
+                </li>
+
+                <li class="footer__list-item">
+                  <img src="./images/instagram_white.svg" alt="instagram icon" class="footer__social-icon" />
+                  <a href="#" class="footer__column-link">Instagram</a>  
+                </li> 
+
+              </li>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <p class="footer__copyright"> © 2022 LavisCannon </p>
+
+
       </footer>
     </div>
   </body>
