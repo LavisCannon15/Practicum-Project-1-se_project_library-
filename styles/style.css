@@ -5,7 +5,7 @@
   max-width: 1600px;
   margin: auto;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -34,8 +34,6 @@
 
 .nav__links {
   list-style: none;
-  padding-left: 0;
-  margin-top: 8px;
 
   display: flex;
   align-items: center;
@@ -128,7 +126,7 @@
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 
-.card__arrange {
+.staff__cards {
   max-width: 760px;
   margin: 68px auto 0;
   gap: 40px;
@@ -273,7 +271,7 @@
 
 .person_name_feynman {
   left: 319px;
-  top: 30px;
+  top: -30px;
 }
 
 .person_name_burbidge {
@@ -313,9 +311,9 @@
 }
 
 .person__caption {
-  /* text-align: center;
+  text-align: center;
   font-size: 14px;
-  margin: 0; */
+  margin: 0;
 }
 
 .membership {
@@ -355,7 +353,6 @@
 .step {
   flex-basis: auto;
   width: 220px;
-  height: 40px;
 }
 
 .step__title {
@@ -382,7 +379,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  z-index: -2;
+  z-index: 1;
 }
 
 .about__title {
@@ -412,6 +409,10 @@
 .about__paragraph {
   margin: 0;
   margin-bottom: 32px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -447,23 +448,27 @@
   justify-content: space-between;
 
   margin-left: 80px;
+  margin-right: 102px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  align-items: baseline;
 }
 
 .footer__column_content_hours {
   color: white;
 
-  /*padding-left: 500px;*/
+  padding-left: 500px;
 
-  position: relative;
-  bottom: 20px;
-  left: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_social {
   color: white;
 
-  position: relative;
-  bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo {
@@ -484,6 +489,7 @@
 
 .footer__column-heading {
   color: white;
+  padding-top: 20px;
 }
 
 .footer__column-link {
@@ -505,7 +511,6 @@
 .footer__copyright {
   color: white;
 
-  margin-bottom: 60px;
   margin-left: 80px;
-  margin-top: auto;
+  margin-bottom: 60px;
 }
