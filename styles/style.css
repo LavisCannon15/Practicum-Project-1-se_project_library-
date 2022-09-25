@@ -5,7 +5,7 @@
   max-width: 1600px;
   margin: auto;
 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -38,6 +38,11 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+
+  /*Issue: reset default margins and padding(top & bottom margins, left padding)*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .nav__link {
@@ -136,6 +141,9 @@
   justify-content: space-between;
 
   list-style: none;
+
+  /*Issue: Please reset a default padding*/
+  padding: 0;
 }
 
 .card {
@@ -339,15 +347,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
-  /* 
-  max-width: 760px;
-  margin: 68px auto 40px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-   */
 }
 
 .step {
@@ -380,6 +379,9 @@
   position: relative;
   box-sizing: border-box;
   z-index: 1;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .about__title {
@@ -399,9 +401,6 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-
-  position: relative;
-  bottom: 32px;
 
   z-index: 1;
 }
@@ -423,10 +422,6 @@
   z-index: -1;
 
   position: absolute;
-  /*
-  bottom: 250px;
-  left: -147px;
-  */
 
   top: -121px;
   left: -91px;
@@ -450,7 +445,6 @@
   margin-left: 80px;
   margin-right: 102px;
   margin-top: 60px;
-  margin-bottom: 60px;
 
   align-items: baseline;
 }
@@ -458,7 +452,8 @@
 .footer__column_content_hours {
   color: white;
 
-  padding-left: 500px;
+  margin-left: auto;
+  margin-right: 100px;
 
   display: flex;
   flex-direction: column;
@@ -489,7 +484,10 @@
 
 .footer__column-heading {
   color: white;
-  padding-top: 20px;
+
+  /*Issue: reset default margins (top & bottom margins)*/
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer__column-link {
@@ -500,7 +498,7 @@
 }
 
 .footer__column-link:hover {
-  color: #1f69c9;
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
@@ -510,6 +508,9 @@
 
 .footer__copyright {
   color: white;
+
+  /*Issue: Reset default top margin*/
+  margin-top: 0;
 
   margin-left: 80px;
   margin-bottom: 60px;
